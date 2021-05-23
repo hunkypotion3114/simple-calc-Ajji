@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jss/jss.js"></script>
+    <link rel="icon" href="images/woman.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ajji's Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h1>Simple-Calculator</h1>
+        </div>
+        <div class="answers">
+            <h2 class="Answers">Answer</h2>
+            <input type="number" id="answer" value=""disabled/>
+        </div>
+        <div class="inputs">
+            <div class=" values">
+                <div class="Value-1">
+                    <h2>Enter a value:</h2>
+                    <input type="text" id="value1" placeholder="Value..."/>
+                </div>
+                <div class="Value-2">
+                    <h2>Enter a value:</h2>
+                    <input type="text" id="value2" placeholder="Value..." />
+                </div>
+                <div>
+                    <button class="button-5" onclick="cls()">Clear All</button>
+                </div>
+            </div>
+            <div class="dmas">
+                <div class="operation">
+                    <button  class="button button-1" id ="div" onclick="calc(this.id)">Division</button>
+                </div>
+                <div class="operation">
+                    <button class="button button-2 " id = "mul" onclick="calc(this.id)">Multiplication</button>
+                </div>
+                <div class="operation">
+                    <button class="button button-3" id = "add" onclick="calc(this.id)"> Addition</button>
+                </div>
+                <div class="operation">
+                    <button class="button button-4" id = "sub" onclick="calc(this.id)">Subtraction</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<table>
+        <tr><th colspan="4"> SIMPLE CALCULATOR </th></tr>
+        <tr><td>value1</td><td><input type="text" id="value1" value="0"/></td>
+        <td>value2</td><td><input type="text" id="value2" value="0"/> </td></tr>
+        <tr><td><input type="button" value="Addition" id = "add"
+        onclick="calc(this.id)"/></td>
+        <td><input type="button" value="Subtraction" id = "sub"
+        onclick="calc(this.id)"/></td>
+        <td><input type="button" value="Multiplication" id = "mul"
+        onclick="calc(this.id)"/></td>
+        <td><input type="button" value="Division" id ="div"
+        onclick="calc(this.id)"/></td></tr>
+        <tr><td>Answer:</td><td> <input type="text" id="answer" value=""
+        disabled/></td>
+        <td colspan="2"><input type="button" value="CLEAR ALL" onclick="cls()"/></td>
+        </tr>
+        </table>-->
+</body>
+</html>
